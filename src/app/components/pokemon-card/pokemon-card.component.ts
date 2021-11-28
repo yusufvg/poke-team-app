@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { UiService } from 'src/app/services/ui.service';
 import { Pokemon } from 'src/app/Pokemon';
 
 @Component({
@@ -8,8 +10,19 @@ import { Pokemon } from 'src/app/Pokemon';
 })
 export class PokemonCardComponent implements OnInit {
   @Input() mon!: Pokemon;
+  @Output() onRemoveMon: EventEmitter<Pokemon> = new EventEmitter();
+  edit!: boolean;
+  subscription!: Subscription;
 
-  constructor() {}
+  constructor(private uiService: UiService) {
+    this.subscription = this.uiService
+      .onToggle()
+      .subscribe((value) => (this.edit = value));
+  }
 
   ngOnInit(): void {}
+
+  onRemove(mon: Pokemon) {
+    this.onRemoveMon.emit(mon);
+  }
 }

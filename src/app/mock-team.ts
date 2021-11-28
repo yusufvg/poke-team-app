@@ -21,4 +21,14 @@ export const TEAM: Pokemon[] = [
     types: ['water'],
     moveset: [],
   },
+  {
+    name: 'test5',
+    types: ['rock', 'grass'],
+    moveset: [],
+  },
+  {
+    name: 'test6',
+    types: ['water'],
+    moveset: [],
+  },
 ];

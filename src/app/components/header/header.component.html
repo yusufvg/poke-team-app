@@ -4,6 +4,7 @@
     *ngIf="hasRoute('/edit')"
     class="btn"
     [ngStyle]="{ 'background-color': 'red' }"
+    (click)="toggleEdit()"
     routerLink="/"
     >Home</a
   >
@@ -11,6 +12,7 @@
     *ngIf="hasRoute('/')"
     class="btn"
     [ngStyle]="{ 'background-color': 'blue' }"
+    (click)="toggleEdit()"
     routerLink="/edit"
     >Edit Team</a
   >

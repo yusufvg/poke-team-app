@@ -3,5 +3,6 @@
     *ngFor="let mon of team"
     class="team-item"
     [mon]="mon"
+    (onRemoveMon)="removeMon(mon)"
   ></app-pokemon-card>
 </div>

@@ -15,4 +15,8 @@ export class TeamComponent implements OnInit {
   ngOnInit(): void {
     this.teamService.getTeam().subscribe((team) => (this.team = team));
   }
+
+  removeMon(mon: Pokemon) {
+    this.teamService.deleteMon(mon).subscribe((team) => (this.team = team));
+  }
 }

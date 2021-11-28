@@ -14,4 +14,9 @@ export class TeamService {
   getTeam(): Observable<Pokemon[]> {
     return of(this.team);
   }
+
+  deleteMon(mon: Pokemon): Observable<Pokemon[]> {
+    this.team = this.team.filter((p) => p.name !== mon.name);
+    return of(this.team);
+  }
 }

@@ -1,4 +1,12 @@
 <div class="card">
   <h3>{{ mon.name }}</h3>
   <p>{{ mon.types }}</p>
+  <button
+    *ngIf="edit"
+    [ngStyle]="{ 'background-color': 'red' }"
+    class="btn"
+    (click)="onRemove(mon)"
+  >
+    x
+  </button>
 </div>
