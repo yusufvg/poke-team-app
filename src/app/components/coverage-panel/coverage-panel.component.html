@@ -1,1 +1,14 @@
-<p>coverage-panel works!</p>
+<div class="coverage-panel">
+  <div class="card coverage-card">
+    <h1>Offense</h1>
+    <ul>
+      <li *ngFor="let m of report.offense">{{ m.target }} x {{ m.effect }}</li>
+    </ul>
+  </div>
+  <div class="card coverage-card">
+    <h1>Defense</h1>
+    <ul>
+      <li *ngFor="let m of report.defense">{{ m.target }} x {{ m.effect }}</li>
+    </ul>
+  </div>
+</div>

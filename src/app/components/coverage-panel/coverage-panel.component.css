@@ -1,0 +1,12 @@
+.coverage-panel {
+  display: flex;
+  justify-content: center;
+}
+
+.coverage-card {
+  flex: 1;
+}
+
+.coverage-card ul {
+  margin: 0px 15px;
+}
