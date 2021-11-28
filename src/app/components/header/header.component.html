@@ -1,1 +1,17 @@
-<p>header works!</p>
+<header>
+  <h1>Poké Team App</h1>
+  <a
+    *ngIf="hasRoute('/edit')"
+    class="btn"
+    [ngStyle]="{ 'background-color': 'red' }"
+    routerLink="/"
+    >Home</a
+  >
+  <a
+    *ngIf="hasRoute('/')"
+    class="btn"
+    [ngStyle]="{ 'background-color': 'blue' }"
+    routerLink="/edit"
+    >Edit Team</a
+  >
+</header>
