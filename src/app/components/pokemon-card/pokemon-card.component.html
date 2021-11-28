@@ -2,7 +2,7 @@
   <h3>{{ mon.name }}</h3>
   <p>{{ mon.types }}</p>
   <button
-    *ngIf="edit"
+    *ngIf="hasRoute('/edit')"
     [ngStyle]="{ 'background-color': 'red' }"
     class="btn"
     (click)="onRemove(mon)"

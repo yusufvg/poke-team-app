@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Pokemon } from '../Pokemon';
+import { Pokemon } from '../interfaces/Pokemon';
 import { TEAM } from '../mock-team';
 import { TYPES } from '../Types';
-import { Matchup } from '../Matchup';
-import { Report } from '../Report';
+import { Report } from '../interfaces/Report';
 
 @Injectable({
   providedIn: 'root',

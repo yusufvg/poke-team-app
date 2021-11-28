@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-header',
@@ -8,15 +7,11 @@ import { UiService } from 'src/app/services/ui.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  constructor(private router: Router, private uiService: UiService) {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 
   hasRoute(route: String) {
     return this.router.url === route;
-  }
-
-  toggleEdit() {
-    this.uiService.toggleEdit();
   }
 }
