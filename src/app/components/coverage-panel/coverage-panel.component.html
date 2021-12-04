@@ -2,13 +2,21 @@
   <div class="card coverage-card">
     <h1>Offense</h1>
     <ul>
-      <li *ngFor="let m of report.offense">{{ m.target }} x {{ m.effect }}</li>
+      <li *ngFor="let m of report.offense">
+        {{ m.target }} x {{ m.occurences ?? 1 }} time{{
+          m.occurences ? "s" : ""
+        }}
+      </li>
     </ul>
   </div>
   <div class="card coverage-card">
     <h1>Defense</h1>
     <ul>
-      <li *ngFor="let m of report.defense">{{ m.target }} x {{ m.effect }}</li>
+      <li *ngFor="let m of report.defense">
+        {{ m.target }} x {{ m.occurences ?? 1 }} time{{
+          m.occurences ? "s" : ""
+        }}
+      </li>
     </ul>
   </div>
 </div>
