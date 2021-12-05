@@ -2,19 +2,39 @@
   <div class="card">
     <h1>Offense</h1>
     <div class="coverage-grid">
-      <app-coverage-card
-        *ngFor="let m of report.offense"
-        [matchup]="m"
-      ></app-coverage-card>
+      <div *ngFor="let occ of offense" class="coverage-row">
+        <div class="row-label">
+          <p>{{ occ.occ }}x</p>
+        </div>
+        <div
+          class="cards-section"
+          [ngStyle]="{ 'background-color': occ.color }"
+        >
+          <app-coverage-card
+            *ngFor="let m of occ.list"
+            [matchup]="m"
+          ></app-coverage-card>
+        </div>
+      </div>
     </div>
   </div>
   <div class="card">
     <h1>Defense</h1>
     <div class="coverage-grid">
-      <app-coverage-card
-        *ngFor="let m of report.defense"
-        [matchup]="m"
-      ></app-coverage-card>
+      <div *ngFor="let occ of defense" class="coverage-row">
+        <div class="row-label">
+          <p>{{ occ.occ }}x</p>
+        </div>
+        <div
+          class="cards-section"
+          [ngStyle]="{ 'background-color': occ.color }"
+        >
+          <app-coverage-card
+            *ngFor="let m of occ.list"
+            [matchup]="m"
+          ></app-coverage-card>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -7,10 +7,32 @@
   flex: 1;
 }
 
-.coverage-grid {
+.coverage-row {
+  display: flex;
+  justify-content: space-between;
+  border: solid black 1px;
+  align-items: stretch;
+  padding: 0;
+  position: relative;
+  margin: 5px 0px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.row-label {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  font-weight: bolder;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.cards-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-grow: 5;
 }
 
 .coverage-grid ul {
