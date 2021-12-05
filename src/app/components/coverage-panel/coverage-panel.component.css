@@ -3,10 +3,16 @@
   justify-content: center;
 }
 
-.coverage-card {
+.card {
   flex: 1;
 }
 
-.coverage-card ul {
+.coverage-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coverage-grid ul {
   margin: 0px 15px;
 }

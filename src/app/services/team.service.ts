@@ -45,8 +45,6 @@ export class TeamService {
       this.mapTypeToReport(type, report.defense, false);
     });
 
-    console.log(TYPES);
-
     return of(report);
   }
 

@@ -9,6 +9,7 @@ import { CoveragePanelComponent } from './components/coverage-panel/coverage-pan
 import { EditTeamPanelComponent } from './components/edit-team-panel/edit-team-panel.component';
 import { TeamComponent } from './components/team/team.component';
 import { PokemonCardComponent } from './components/pokemon-card/pokemon-card.component';
+import { CoverageCardComponent } from './components/coverage-card/coverage-card.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { PokemonCardComponent } from './components/pokemon-card/pokemon-card.com
     EditTeamPanelComponent,
     TeamComponent,
     PokemonCardComponent,
+    CoverageCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

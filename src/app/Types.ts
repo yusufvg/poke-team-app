@@ -1,6 +1,7 @@
 export const TYPES = [
   {
     type: 'normal',
+    color: '#aaaa99',
     offense: [
       { target: 'rock', effect: 0.5 },
       { target: 'steel', effect: 0.5 },
@@ -13,6 +14,7 @@ export const TYPES = [
   },
   {
     type: 'fire',
+    color: '#ff4422',
     offense: [
       { target: 'fire', effect: 0.5 },
       { target: 'water', effect: 0.5 },
@@ -37,6 +39,7 @@ export const TYPES = [
   },
   {
     type: 'water',
+    color: '#3399ff',
     offense: [
       { target: 'fire', effect: 2 },
       { target: 'water', effect: 0.5 },
@@ -56,6 +59,7 @@ export const TYPES = [
   },
   {
     type: 'electric',
+    color: '#ffcc33',
     offense: [
       { target: 'water', effect: 2 },
       { target: 'electric', effect: 0.5 },
@@ -73,6 +77,7 @@ export const TYPES = [
   },
   {
     type: 'grass',
+    color: '#77cc55',
     offense: [
       { target: 'fire', effect: 0.5 },
       { target: 'grass', effect: 0.5 },
@@ -99,6 +104,7 @@ export const TYPES = [
   },
   {
     type: 'ice',
+    color: '#66ccff',
     offense: [
       { target: 'fire', effect: 0.5 },
       { target: 'water', effect: 0.5 },
@@ -119,6 +125,7 @@ export const TYPES = [
   },
   {
     type: 'fighting',
+    color: '#bb5544',
     offense: [
       { target: 'poison', effect: 0.5 },
       { target: 'flying', effect: 0.5 },
@@ -143,6 +150,7 @@ export const TYPES = [
   },
   {
     type: 'poison',
+    color: '#aa5599',
     offense: [
       { target: 'poison', effect: 0.5 },
       { target: 'ground', effect: 0.5 },
@@ -165,6 +173,7 @@ export const TYPES = [
   },
   {
     type: 'ground',
+    color: '#ddbb55',
     offense: [
       { target: 'grass', effect: 0.5 },
       { target: 'bug', effect: 0.5 },
@@ -186,6 +195,7 @@ export const TYPES = [
   },
   {
     type: 'flying',
+    color: '#8899ff',
     offense: [
       { target: 'electric', effect: 0.5 },
       { target: 'rock', effect: 0.5 },
@@ -206,6 +216,7 @@ export const TYPES = [
   },
   {
     type: 'psychic',
+    color: '#ff5599',
     offense: [
       { target: 'psychic', effect: 0.5 },
       { target: 'steel', effect: 0.5 },
@@ -223,6 +234,7 @@ export const TYPES = [
   },
   {
     type: 'bug',
+    color: '#aabb22',
     offense: [
       { target: 'fire', effect: 0.5 },
       { target: 'fighting', effect: 0.5 },
@@ -246,6 +258,7 @@ export const TYPES = [
   },
   {
     type: 'rock',
+    color: '#bbaa67',
     offense: [
       { target: 'fighting', effect: 0.5 },
       { target: 'ground', effect: 0.5 },
@@ -269,6 +282,7 @@ export const TYPES = [
   },
   {
     type: 'ghost',
+    color: '#6666bb',
     offense: [
       { target: 'dark', effect: 0.5 },
       { target: 'ghost', effect: 2 },
@@ -286,6 +300,7 @@ export const TYPES = [
   },
   {
     type: 'dragon',
+    color: '#7766ee',
     offense: [
       { target: 'steel', effect: 0.5 },
       { target: 'dragon', effect: 2 },
@@ -303,6 +318,7 @@ export const TYPES = [
   },
   {
     type: 'dark',
+    color: '#775544',
     offense: [
       { target: 'fighting', effect: 0.5 },
       { target: 'dark', effect: 0.5 },
@@ -321,6 +337,7 @@ export const TYPES = [
   },
   {
     type: 'steel',
+    color: '#aaaabb',
     offense: [
       { target: 'fire', effect: 0.5 },
       { target: 'water', effect: 0.5 },
@@ -349,6 +366,7 @@ export const TYPES = [
   },
   {
     type: 'fairy',
+    color: '#ee99ee',
     offense: [
       { target: 'fire', effect: 0.5 },
       { target: 'poison', effect: 0.5 },
